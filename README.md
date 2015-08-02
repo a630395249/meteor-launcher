@@ -1,4 +1,5 @@
-# meteor-launcher
-Desktop App to easy manage and launch multiple meteor applications in local
+# Meteor Launcher Project Page
 
-(This file will be updated in few days with all you need to know about this code...)
+A simple presentation page of this project
+
+
