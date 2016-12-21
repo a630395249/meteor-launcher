@@ -1,0 +1,5 @@
+app
+dist/windows*
+resources
+vendor
+nw.lnk
