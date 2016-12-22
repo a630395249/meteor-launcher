@@ -23,8 +23,8 @@
   <body>
     <section class="page-header">
       <div class="container">
-        <h1 class="project-name">Meteor Launcher</h1>
-        <h2 class="project-tagline">Desktop App to easy manage and launch multiple Meteor applications in local</h2>
+        <h1 class="project-name">Meteor Launcher <small>v1.0</small></h1>
+        <h2 class="project-tagline">Desktop App to easy manage and launch multiple Meteor applications for development in your desktop</h2>
         <a href="dist/meteor_launcher_w32.zip" class="btn"><span class="mif-windows"></span> Download for Windows</a>
         <a href="https://github.com/necrotxilok/meteor-launcher" class="btn"><span class="mif-github"></span> View on GitHub</a>
       </div>
@@ -36,12 +36,10 @@
         <div class="row cells12">
           <div class="cell colspan5">
             <h3>What is Meteor Launcher?</h3>
-            <p>Meteor Launcher is a multi platform desktop app to help Meteor developers create, manage and launch different Meteor applications in their computers locally.</p>
-            <p><a href="dist/meteor_launcher_w32.zip" class="button"><span class="mif-file-download"></span> Download now</a></p>
-            <blockquote>Today it is only for Windows but we are working on make it for all desktop platforms</blockquote>
+            <p>Meteor Launcher is a multi-platform desktop app to help Meteor developers create, manage and launch different Meteor applications in their computers locally.</p>
           </div>
           <div class="cell colspan7">
-            <div class="image-rotate left"><img src="img/screenshots/screenshot-01.jpg"></div>
+            <div class="image-rotate left"><img src="img/screenshots/screenshot-01.png"></div>
           </div>
         </div>
       </div>
@@ -118,19 +116,21 @@
       <div class="grid">
         <div class="row">
           <h3>Installation</h3>
-          <p>First of all you will need to install Meteor in your computer. Otherwise, this application will not work. You can <a href="https://www.meteor.com/install" target="_blank">install Meteor</a> following the steps in the official site.</p>
+          <p>First of all you need to install Meteor in your computer. Otherwise, this application will not work. You can <a href="https://www.meteor.com/install" target="_blank">install Meteor</a> following the steps in the official site.</p>
           <h4>On Windows</h4>
           <p>Extract the zip file where you want and simply click on <code>Meteor Launcher.exe</code> to run the application.</p>
-          <blockquote>I'll make an installable version to make it easier</blockquote>
-          <h4>On Mac OS X</h4>
-          <p>Not ready.</p>
+          <blockquote>I'll make an installable version to make it easier (But I have to find how to do it...)</blockquote>
           <h4>On Linux</h4>
           <p>Not ready.</p>
+          <blockquote>I tested it on Linux and it is working fine. I'll publish a linux distribution soon.</blockquote>
+          <h4>On Mac OS X</h4>
+          <p>Not ready.</p>
+          <blockquote>I hope the MAC version works like the Linux version...</blockquote>
         </div>
       </div>
 
       <div class="grid">
-        <h3>Instrucctions</h3>
+        <h3>How to use it</h3>
 
         <h4>Adding new projects</h4>
         <div class="row cells12">
@@ -144,7 +144,7 @@
         <div class="row cells12">
           <div class="cell colspan3"><img src="img/screenshots/screenshot-03.jpg"></div>
           <div class="cell colspan9">
-            <p class="text-default">To edit a project you can right click in the tile of the project o click the cog button in the top left corner in the tile that appear when the mouse is over it. You can change all settings while the application is not running and all modifications will be stored automaticly. From the editor panel you can also view the last execution log or remove the project from the application.</p>
+            <p class="text-default">To edit a project you can right click in the tile of the project o click the cog button in the top left corner in the tile that appear when the mouse is over it. You can change all settings while the application is not running and all modifications will be stored automaticly. From this form you can also remove the project from the application (All files will be kept in his original folder).</p>
           </div>
         </div>
 
@@ -152,7 +152,7 @@
         <div class="row cells12">
           <div class="cell colspan3"><img src="img/screenshots/screenshot-04.jpg"></div>
           <div class="cell colspan9">
-            <p class="text-default">All the projects will be sorted in a horizontal scroll. To change the position of any project you only need to drag and drop any tile where you want to put it. With the icon in the top right corner of the tile you can change the size of the tile (normal, wide or large).</p>
+            <p class="text-default">All the projects will be sorted in a horizontal scroll. You can change the position of any project by drag and drop the tile where you want. The icon in the top right corner of the tile allows you change the size of the tile (small, wide or large).</p>
           </div>
         </div>
 
@@ -160,23 +160,15 @@
         <div class="row cells12">
           <div class="cell colspan3"><img src="img/screenshots/screenshot-05.jpg"></div>
           <div class="cell colspan9">
-            <p class="text-default">When you have the mouse over a tile you can see in the center of the tile a circle play button, just click on it to launch the Meteor App. If all is OK a rocket icon will appear in the left corner of the project tile and a link to open the application in your favorite browser. If something goes wrong the log window appears with the details.</p>
+            <p class="text-default">When clicking in a project tile a window shows all actions and the running log. You can start or stop the project directly using the Play button, manage the project settings or open a terminal in the project folder to execute commands like "meteor list", "meteor update", "meteor reset", etc</p>
           </div>
         </div>
 
-        <h4>Stopping projects</h4>
+        <h4>The running log</h4>
         <div class="row cells12">
           <div class="cell colspan3"><img src="img/screenshots/screenshot-06.jpg"></div>
           <div class="cell colspan9">
-            <p class="text-default">Simply click on the circle stop button in the middle of the tile. If you close the application with some project running, it will stop all running projects automatically.</p>
-          </div>
-        </div>
-
-        <h4>View project Log</h4>
-        <div class="row cells12">
-          <div class="cell colspan3"><img src="img/screenshots/screenshot-07.jpg"></div>
-          <div class="cell colspan9">
-            <p class="text-default">If you need to see the execution log you can right click on the tile when the application is running, then a window will show the actual state of the application. You can also click on the rocket icon or the "View log" link. When the project is stopped, you can access to the last execution log from the editor panel.</p>
+            <p class="text-default">The log allows you control the server state when running the project. If the application crash you can see here the error, the line and the file where something is not working properly. Debugging your apps its very important!</p>
           </div>
         </div>
 
@@ -184,23 +176,31 @@
 
       <div class="grid">
         <div class="row">
+          <h3>Developed with Meteor Launcher</h3>
+          <a href="https://whatgift.es" target="_blank"><img src="img/what-gift-logo.png" width="300px"></a>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="row">
           <h3>Next steps</h3>
           <p>
             <ul>
-              <li>Build distribution for Linux</li>
-              <li>Build distribution for MAC</li>
-              <li>General settings</li>
+              <li>Publish distribution for Linux</li>
+              <li>Publish distribution for MAC</li>
+              <li>Button to clear the log</li>
+              <li>Run app in production mode</li>
               <li>Button to create a new Meteor project if the selected directory is empty</li>
               <li>Button to create Meteor examples in empty directories</li>
-              <li>Warn user if the selected folder is not empty and it does not have a Meteor Project</li>
+              <li>List all packages included in the project (meteor and npm)</li>
+              <li>Add/Remove atmosphere packages to the project</li>
+              <li>Add/Remove npm packages to the project</li>
+              <li>Button to check package updates and update them</li>
               <li>Button to reset Meteor Project</li>
               <li>Button to update Meteor Project</li>
-              <li>Deploy aplications on meteor.com</li>
-              <li>Run on Mobile</li>
-              <li>Autorun Meteor projects on start</li>
-              <li>Run with windows</li>
-              <li>Add atmosphere packages to the project</li>
-              <li>Add npm packages to the project</li>
+              <li>Button to build your aplication for deployment</li>
+              <li>Use settings.json file on run</li>
+              <li>General settings</li>
               <li>And much more...</li>
             </ul>
           </p>
@@ -226,7 +226,16 @@
       <div class="grid">
         <div class="row">
           <h3>Last changes</h3>
-          <pre>2015-08-10 :: First commit</pre>
+<pre>
+10/08/2015 :: Pre-release version (BETA)
+12/05/2015 :: Adding New Dev Branch
+12/06/2015 :: Adding Compass configuration
+12/06/2015 :: Update Compass files
+10/21/2016 :: Process Bug Fixing
+10/23/2016 :: Releasing version 1.0
+10/25/2016 :: Update NWJS and Some Bug Fixing
+22/12/2016 :: Improve Process Log
+</pre>
         </div>
       </div>
 
@@ -239,7 +248,7 @@
 
         <!--<p class="site-footer-owner"><a href="https://github.com/necrotxilok/meteor-launcher">Meteor Launcher</a> is maintained by <a href="http://necrotxilok.github.io/">necro_txilok</a>.</p>-->
 
-        <p class="site-footer-credits">Developed by <a href="http://necrotxilok.github.io/" target="_blank">necro_txilok</a> - 2015</p>
+        <p class="site-footer-credits">Developed by <a href="http://necrotxilok.github.io/" target="_blank">necro_txilok</a> - 2016</p>
       </div>
     </footer>
 
