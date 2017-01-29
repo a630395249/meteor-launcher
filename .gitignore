@@ -1,3 +1,4 @@
+.builds
 app
 dist/windows*
 resources

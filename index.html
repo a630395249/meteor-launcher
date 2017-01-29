@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/github-light.css" media="screen">
 
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 
     <!-- jQuery -->
     <script type="text/javascript" src="vendor/jquery/jquery-1.11.3.min.js"></script>
@@ -23,11 +24,16 @@
   <body>
     <section class="page-header">
       <div class="container">
-        <h1 class="project-name">Meteor Launcher <small>v1.0</small></h1>
-        <h2 class="project-tagline">Desktop App to easy manage and launch multiple Meteor applications for development in your desktop</h2>
-        <a href="dist/meteor_launcher_w32.zip" class="btn"><span class="mif-windows"></span> Download for Windows</a>
-        <a href="https://github.com/necrotxilok/meteor-launcher" class="btn"><span class="mif-github"></span> View on GitHub</a>
+        <h1 class="project-name">Meteor Launcher <small>v1.1.0</small></h1>
+        <h2 class="project-tagline">Develop and manage multiple Meteor projects easily from a single application.</h2>
+        <a href="https://github.com/necrotxilok/meteor-launcher/releases/download/1.1.0/setup_meteor_launcher_win64_1.1.0.exe" class="btn"><span class="mif-windows"></span> Download for Windows</a>
+        <a href="https://github.com/necrotxilok/meteor-launcher/releases/download/1.1.0/meteor_launcher_linux64_1.1.0.zip" class="btn"><span class="mif-linux"></span> Download for Linux</a>
+        <a href="https://github.com/necrotxilok/meteor-launcher/releases/download/1.1.0/meteor_launcher_mac64_1.1.0.zip" class="btn"><span class="mif-apple"></span> Download for Mac</a>
       </div>
+    </section>
+
+    <section class="github-link">
+      <a href="https://github.com/necrotxilok/meteor-launcher" class="button large-button bg-blue fg-white github-button" target="_blank"><span class="mif-github"></span> View on GitHub</a>
     </section>
 
     <section class="main-content container">
@@ -36,7 +42,7 @@
         <div class="row cells12">
           <div class="cell colspan5">
             <h3>What is Meteor Launcher?</h3>
-            <p>Meteor Launcher is a multi-platform desktop app to help Meteor developers create, manage and launch different Meteor applications in their computers locally.</p>
+            <p>Meteor Launcher is a multi-platform desktop app to help Meteor developers create, manage, launch and build multiple Meteor projects easily.</p>
           </div>
           <div class="cell colspan7">
             <div class="image-rotate left"><img src="img/screenshots/screenshot-01.png"></div>
@@ -47,131 +53,61 @@
       <div class="grid">
         <div class="row">
           <h3>Features</h3>
-          <div class="tile-container">
+          <ul>
+            <li>Multiplatform! This app runs in Windows, Linux and OS X</li>
+            <li>Friendly user interface to manage all your projects from one app.</li>
+            <li>Configure and customize your project settings</li>
+            <li>Create a new empty Meteor Application in a new folder</li>
+            <li>Add existing Meteor applications located in your computer</li>
+            <li>Control the execution of your project with real-time logs</li>
+            <li>Add or remove platforms to run in Android and iOS</li>
+            <li>Add or remove packages from Atmosphere or NPM to your project</li>
+            <li>Build your application to publish in your server, Android Market o iOS Store</li>
+            <li>Open a terminal directly in the project working directory for advanced functionalities</li>
+          </ul>
+        </div>
+      </div>
 
-            <div class="tile-large bg-indigo fg-white">
-              <div class="tile-content iconic slide-up-2">
-                  <div class="slide">
-                    <span class="icon mif-rocket"></span>
-                  </div>
-                  <div class="slide-over bg-darkIndigo text-default padding10">Run multiple Meteor applications with one click (No more terminals!!)</div>
-                  <div class="tile-label">One Click</div>
-              </div>
-            </div>
-
-            <div class="tile-wide bg-green fg-white">
-              <div class="tile-content iconic slide-down-2">
-                  <div class="slide">
-                    <span class="icon mif-home"></span>
-                  </div>
-                  <div class="slide-over bg-darkGreen text-default padding10">Manage all your Meteor projects from a single application</div>
-                  <div class="tile-label">Multiple Projects</div>
-              </div>
-            </div>
-
-            <div class="tile-wide bg-blue fg-white">
-              <div class="tile-content iconic slide-up-2">
-                  <div class="slide">
-                    <span class="icon mif-shift"></span>
-                  </div>
-                  <div class="slide-over bg-darkBlue text-default padding10">Set up the port where you want to run each Meteor application</div>
-                  <div class="tile-label">Meteor Up</div>
-              </div>
-            </div>
-
-            <div class="tile bg-darkBlue fg-white">
-              <div class="tile-content iconic slide-left-2">
-                  <div class="slide">
-                    <span class="icon mif-widgets"></span>
-                  </div>
-                  <div class="slide-over bg-darkCobalt text-default padding10">Sort all your Meteor projects like you want</div>
-                  <div class="tile-label">Sorting</div>
-              </div>
-            </div>
-
-            <div class="tile bg-violet fg-white">
-              <div class="tile-content iconic slide-up-2">
-                  <div class="slide">
-                    <span class="icon mif-paint"></span>
-                  </div>
-                  <div class="slide-over bg-darkViolet text-default padding10">Customize each Meteor project with a color or an image</div>
-                  <div class="tile-label">Customize</div>
-              </div>
-            </div>
-
-            <div class="tile bg-orange fg-white">
-              <div class="tile-content iconic slide-right-2">
-                  <div class="slide">
-                    <span class="icon mif-file-text"></span>
-                  </div>
-                  <div class="slide-over bg-darkOrange text-default padding10">View the execution log even if the application crash</div>
-                  <div class="tile-label">Logs</div>
-              </div>
-            </div>
-
-          </div>
+      <div class="grid">
+        <h3>Screenshots</h3>
+        <div class="row cells12">
+          <div class="img-box cell colspan6"><img src="img/screenshots/screenshot-01.png" alt="screenshot-01"></div>
+          <div class="img-box cell colspan6"><img src="img/screenshots/screenshot-02.png" alt="screenshot-01"></div>
+        </div>
+        <div class="row cells12">
+          <div class="img-box cell colspan6"><img src="img/screenshots/screenshot-03.png" alt="screenshot-01"></div>
+          <div class="img-box cell colspan6"><img src="img/screenshots/screenshot-04.png" alt="screenshot-01"></div>
+        </div>
+        <div class="row cells12">
+          <div class="img-box cell colspan6"><img src="img/screenshots/screenshot-05.png" alt="screenshot-01"></div>
+          <div class="img-box cell colspan6"><img src="img/screenshots/screenshot-06.png" alt="screenshot-01"></div>
+        </div>
+        <div class="row cells12">
+          <div class="img-box cell colspan6"><img src="img/screenshots/screenshot-07.png" alt="screenshot-01"></div>
+          <div class="img-box cell colspan6"><img src="img/screenshots/screenshot-08.png" alt="screenshot-01"></div>
+        </div>
+        <div class="row cells12">
+          <div class="img-box cell colspan6"><img src="img/screenshots/screenshot-09.png" alt="screenshot-01"></div>
+          <div class="img-box cell colspan6"><img src="img/screenshots/screenshot-10.png" alt="screenshot-01"></div>
         </div>
       </div>
 
       <div class="grid">
         <div class="row">
           <h3>Installation</h3>
-          <p>First of all you need to install Meteor in your computer. Otherwise, this application will not work. You can <a href="https://www.meteor.com/install" target="_blank">install Meteor</a> following the steps in the official site.</p>
+          <p>IMPORTANT!! First of all you need to install Meteor in your computer. Otherwise, this application will not work. You can install Meteor following the steps in the official site.</p>
+          <p><a href="https://www.meteor.com/install" target="_blank">Install Meteor</a></p>
           <h4>On Windows</h4>
-          <p>Extract the zip file where you want and simply click on <code>Meteor Launcher.exe</code> to run the application.</p>
-          <blockquote>I'll make an installable version to make it easier (But I have to find how to do it...)</blockquote>
-          <h4>On Linux</h4>
-          <p>Not ready.</p>
-          <blockquote>I tested it on Linux and it is working fine. I'll publish a linux distribution soon.</blockquote>
+          <p>Execute the installer and follow the steps.</p>
+          <h4>On Linux (Ubuntu)</h4>
+          <p>Extract the zip file in the folder</p>
+          <pre>$ unzip meteor_launcher_linux64_1.1.0.zip -d /opt</pre>
+          <p>Copy the launcher file in shared applications</p>
+          <pre>$ sudo cp /opt/meteorlauncher/meteorlauncher.desktop /usr/share/applications</pre>
+          <p>Now you can open the app directly from Unity.</p>
           <h4>On Mac OS X</h4>
-          <p>Not ready.</p>
-          <blockquote>I hope the MAC version works like the Linux version...</blockquote>
+          <p>Extract the zip file and copy the app to your Applications folder.</p>
         </div>
-      </div>
-
-      <div class="grid">
-        <h3>How to use it</h3>
-
-        <h4>Adding new projects</h4>
-        <div class="row cells12">
-          <div class="cell colspan3"><img src="img/screenshots/screenshot-02.jpg"></div>
-          <div class="cell colspan9">
-            <p class="text-default">To add a new project you have only to click in the "Plus" button in the top right corner. Introduce the name of the project, select (or paste) the folder where is the Meteor App and set the port where you want to run this app. You can also select a color or an image to customize your project. By pressing the Add button your project is ready to be launched.</p>
-          </div>
-        </div>
-
-        <h4>Editing projects</h4>
-        <div class="row cells12">
-          <div class="cell colspan3"><img src="img/screenshots/screenshot-03.jpg"></div>
-          <div class="cell colspan9">
-            <p class="text-default">To edit a project you can right click in the tile of the project o click the cog button in the top left corner in the tile that appear when the mouse is over it. You can change all settings while the application is not running and all modifications will be stored automaticly. From this form you can also remove the project from the application (All files will be kept in his original folder).</p>
-          </div>
-        </div>
-
-        <h4>Sorting projects</h4>
-        <div class="row cells12">
-          <div class="cell colspan3"><img src="img/screenshots/screenshot-04.jpg"></div>
-          <div class="cell colspan9">
-            <p class="text-default">All the projects will be sorted in a horizontal scroll. You can change the position of any project by drag and drop the tile where you want. The icon in the top right corner of the tile allows you change the size of the tile (small, wide or large).</p>
-          </div>
-        </div>
-
-        <h4>Running projects</h4>
-        <div class="row cells12">
-          <div class="cell colspan3"><img src="img/screenshots/screenshot-05.jpg"></div>
-          <div class="cell colspan9">
-            <p class="text-default">When clicking in a project tile a window shows all actions and the running log. You can start or stop the project directly using the Play button, manage the project settings or open a terminal in the project folder to execute commands like "meteor list", "meteor update", "meteor reset", etc</p>
-          </div>
-        </div>
-
-        <h4>The running log</h4>
-        <div class="row cells12">
-          <div class="cell colspan3"><img src="img/screenshots/screenshot-06.jpg"></div>
-          <div class="cell colspan9">
-            <p class="text-default">The log allows you control the server state when running the project. If the application crash you can see here the error, the line and the file where something is not working properly. Debugging your apps its very important!</p>
-          </div>
-        </div>
-
       </div>
 
       <div class="grid">
@@ -186,40 +122,16 @@
           <h3>Next steps</h3>
           <p>
             <ul>
-              <li>Publish distribution for Linux</li>
-              <li>Publish distribution for MAC</li>
-              <li>Button to clear the log</li>
-              <li>Run app in production mode</li>
-              <li>Button to create a new Meteor project if the selected directory is empty</li>
+              <li>Run app in production mode for testing before build</li>
               <li>Button to create Meteor examples in empty directories</li>
-              <li>List all packages included in the project (meteor and npm)</li>
-              <li>Add/Remove atmosphere packages to the project</li>
-              <li>Add/Remove npm packages to the project</li>
               <li>Button to check package updates and update them</li>
               <li>Button to reset Meteor Project</li>
               <li>Button to update Meteor Project</li>
-              <li>Button to build your aplication for deployment</li>
               <li>Use settings.json file on run</li>
               <li>General settings</li>
               <li>And much more...</li>
             </ul>
           </p>
-        </div>
-      </div>
-
-      <div class="grid">
-        <div class="row">
-          <h3>Support this project</h3>
-          <p>If you think this project is useful, you can buy me a beer doing click on the donation button or you can take part on this project through <a href="https://github.com/necrotxilok/meteor-launcher">GitHub</a>.</p>
-          <br>
-          <div class="">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="cmd" value="_s-xclick">
-              <input type="hidden" name="hosted_button_id" value="4QYHP3RQJ5WJW">
-              <input type="image" src="http://necrotxilok.github.io/meteor-launcher/img/buy_beer.png" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
-              <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
-            </form>
-          </div>
         </div>
       </div>
 
@@ -235,7 +147,33 @@
 10/23/2016 :: Releasing version 1.0
 10/25/2016 :: Update NWJS and Some Bug Fixing
 22/12/2016 :: Improve Process Log
+26/12/2016 :: Button for clear the log
+04/01/2017 :: List project platforms and packages
+14/01/2017 :: Adding and removing platforms from project
+27/01/2017 :: Adding and removing packages from project
+28/01/2017 :: Create new projects directly from the interface
+28/01/2017 :: Update NWJS to version 0.20.0
+29/01/2017 :: Build projects to output folder
+29/01/2017 :: Releasing version 1.1.0
 </pre>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="row">
+          <h3>Support this project</h3>
+          <p>If you think this project is useful, you can buy me a beer doing click on the donation button or you can take part on this project through <a href="https://github.com/necrotxilok/meteor-launcher">GitHub</a>.</p>
+          <br/>
+          <div class="donate">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="4QYHP3RQJ5WJW">
+              <input type="image" src="http://necrotxilok.github.io/meteor-launcher/img/buy_beer.png" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+              <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+            </form>
+          </div>
+          <br/>
+          <p>You can also contact me by sending an email to necro_txilok[at]hotmail.com.</p>
         </div>
       </div>
 
@@ -243,11 +181,7 @@
 
     <footer class="site-footer">
       <div class="container">
-
         <p class="site-footer-powered">Powered by: <a href="http://nwjs.io/" target="_blank"><img src="img/nwjs.png"></a> <a href="https://nodejs.org/" target="_blank"><img src="img/nodejs.png"></a> <a href="https://www.meteor.com/" target="_blank"><img src="img/meteor-logo.png"></a> <a href="https://metroui.org.ua/" target="_blank"><img src="img/metro-ui.png"></a></p>
-
-        <!--<p class="site-footer-owner"><a href="https://github.com/necrotxilok/meteor-launcher">Meteor Launcher</a> is maintained by <a href="http://necrotxilok.github.io/">necro_txilok</a>.</p>-->
-
         <p class="site-footer-credits">Developed by <a href="http://necrotxilok.github.io/" target="_blank">necro_txilok</a> - 2016</p>
       </div>
     </footer>
