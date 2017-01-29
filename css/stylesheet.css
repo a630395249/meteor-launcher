@@ -21,9 +21,7 @@ a:hover {
   border-width: 1px;
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-}
-.btn + .btn {
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .btn:visited {
@@ -59,7 +57,6 @@ a:hover {
   }
   .btn + .btn {
     margin-top: 1rem;
-    margin-left: 0;
   }
 }
 
@@ -75,6 +72,12 @@ a:hover {
   border: none;
   height: auto;
   padding: 8px;
+}
+
+.github-button [class^=mif-] {
+  padding: 4px;
+  position: relative;
+  top: -1px;
 }
 
 .page-header {
