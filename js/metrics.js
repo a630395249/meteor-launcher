@@ -2,7 +2,7 @@
 ;(function(document, window, $, undefined) {
   "use strict";
 
-  var server = 'http://ntkserver.local';
+  var server = 'http://ntkserver.com';
   var url = 'http://necrotxilok.github.io/meteor-launcher/';
   //var url = window.location.href;
 
