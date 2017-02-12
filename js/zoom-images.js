@@ -49,7 +49,6 @@
           $imgBox = $next;
         }
       }
-      console.log($imgBox, getImage());
       $('.full-box').find('.image img').attr('src', getImage());
     });
 
